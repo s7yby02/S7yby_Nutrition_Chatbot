@@ -1,7 +1,7 @@
 {"intents":[
     {"tag": "greetings",
-    "patterns": ["hello", "hey", "hi", "Hi", "good day", "Greetings", "what's up?", "how is it going?"],
-    "responses": ["Hello!", "Hey!", "What can I do for you?"]
+    "patterns": ["hello", "hey", "hi", "Hi", "good day", "Greetings", "what's up?", "how is it going?", "How are you doing?"],
+    "responses": ["Hello!", "Hey!", "Hey! What can I do for you?"]
     },
     {"tag": "goodbye",
     "patterns": ["cya", "See you later", "Goodbye", "I am Leaving", "Have a Good day", "bye", "cao", "see ya"],
@@ -17,7 +17,7 @@
     "responses": ["I don't have age"]
     },
     {"tag": "name",
-    "patterns": ["what is your name", "what should I call you", "whats your name?", "who are you?", "Can you tell me your name"],
+    "patterns": ["what is your name", "what should I call you", "whats your name?", "Hi, how old are you?","Can you tell me your name"],
     "responses": ["You can call me S7yby!", "I'm S7yby!", "I'm S7yby your nutrition assistant"]
     },
     {"tag": "functionality",
@@ -36,7 +36,7 @@
     {
       "tag": "calorie_counting",
       "patterns": ["How do I count calories?", "Tell me about calorie counting", "Calorie tracking tips"],
-      "responses": ["Calorie counting involves tracking the number of calories you consume to manage your weight. I can help you set a daily calorie goal."]
+      "responses": ["Calorie counting involves tracking the number of calories you consume to manage your weight."]
     },
     {
       "tag": "macronutrients",
@@ -50,7 +50,17 @@
     },
     {
       "tag": "meal_recommendation",
-      "patterns": ["Recommend meals for me", "What should I eat?", "Meal suggestions based on age and sex"],
+      "patterns": ["Recommend meals for me", "What should I eat?", "Meal suggestions?", "Give me what to eat", "Plans for diety?", "Meals for me?"],
+      "responses": ["Sure! To provide personalized meal recommendations, could you please provide your age, sex, and any specific dietary preferences you have?"]
+    },
+    {
+      "tag": "Male Basic advice",
+      "patterns": ["I'm male, how can you help me", "can you give general ideas about healthy nutrition for males?", "Men advices for nutrition?", "What should men know about nutrition", "Diety plans for males?", "Can you tell me what a man should know about nutrition, adivces ...."],
+      "responses": ["Sure! Here are some general ideas for maintaining a healthy and balanced diet: Maintaining a healthy diet for men involves a balanced approach to nutrition. Prioritize lean proteins, colorful fruits, and vegetables for essential nutrients. Opt for whole grains and healthy fats while staying well-hydrated. Mindful eating, portion control, and regular, balanced meals contribute to overall well-being. Limit processed foods, sugary snacks, and alcohol intake for better health. Tailor your nutrition to individual needs, and consider consulting a healthcare professional for personalized advice. I can give assist you with a program if you can give me your age."]
+    },
+    {
+      "tag": "age-male > recipe",
+      "patterns": ["Recommend meals for me", "What should I eat?", "Meal suggestions?", "Give me what to eat", "Plans for diety?", "Meals for me?"],
       "responses": ["Sure! To provide personalized meal recommendations, could you please provide your age, sex, and any specific dietary preferences you have?"]
     }
 ]}
