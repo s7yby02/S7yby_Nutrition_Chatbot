@@ -1,0 +1,56 @@
+{"intents":[
+    {"tag": "greetings",
+    "patterns": ["hello", "hey", "hi", "Hi", "good day", "Greetings", "what's up?", "how is it going?"],
+    "responses": ["Hello!", "Hey!", "What can I do for you?"]
+    },
+    {"tag": "goodbye",
+    "patterns": ["cya", "See you later", "Goodbye", "I am Leaving", "Have a Good day", "bye", "cao", "see ya"],
+    "responses": ["Sad to see you go (", "Talk to you later", "Goodbye!"]
+    },
+    {
+      "tag": "thanks",
+      "patterns": ["thank you", "thanks", "appreciate it", "thank you so much", "thanks a lot"],
+      "responses": ["You're welcome!", "Glad I could help!", "Anytime! If you have more questions, feel free to ask."]
+    },
+    {"tag": "age",
+    "patterns": ["how old", "how old is florian", "what is your age", "how old are you", "age?"],
+    "responses": ["I don't have age"]
+    },
+    {"tag": "name",
+    "patterns": ["what is your name", "what should I call you", "whats your name?", "who are you?", "Can you tell me your name"],
+    "responses": ["You can call me S7yby!", "I'm S7yby!", "I'm S7yby your nutrition assistant"]
+    },
+    {"tag": "functionality",
+    "patterns": ["What you can do to help", "What you can do", "help?", "What are your functionality"],
+    "responses": ["I can help you make healthy meal for your gym plans"]
+    },
+    {"tag": "hours",
+    "patterns": ["when are you S7yby open", "what are your hours", "hours of work?"],
+    "responses": ["24/7"]
+    },
+    {
+      "tag": "nutrition",
+      "patterns": ["Tell me about nutrition plans", "Can you help with meal planning?", "nutrition advice", "meal plans"],
+      "responses": ["Sure! I can help you create personalized nutrition plans based on your dietary preferences and fitness goals."]
+    },
+    {
+      "tag": "calorie_counting",
+      "patterns": ["How do I count calories?", "Tell me about calorie counting", "Calorie tracking tips"],
+      "responses": ["Calorie counting involves tracking the number of calories you consume to manage your weight. I can help you set a daily calorie goal."]
+    },
+    {
+      "tag": "macronutrients",
+      "patterns": ["What are macronutrients?", "Tell me about protein, carbs, and fats", "Importance of macronutrients"],
+      "responses": ["Macronutrients, or macros, include proteins, carbohydrates, and fats. They are essential for a balanced diet. I can provide guidance on setting macro goals."]
+    },
+    {
+      "tag": "dietary_preferences",
+      "patterns": ["How do I choose dietary preferences?", "Vegetarian diet information", "Vegan diet tips"],
+      "responses": ["Choosing dietary preferences depends on your lifestyle and health goals. Whether you're vegetarian, vegan, or have other preferences, I can help you plan meals accordingly."]
+    },
+    {
+      "tag": "meal_recommendation",
+      "patterns": ["Recommend meals for me", "What should I eat?", "Meal suggestions based on age and sex"],
+      "responses": ["Sure! To provide personalized meal recommendations, could you please provide your age, sex, and any specific dietary preferences you have?"]
+    }
+]}
