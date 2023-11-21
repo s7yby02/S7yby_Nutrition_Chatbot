@@ -11,6 +11,6 @@ from tensorflow. keras.layers import Dense, Activation, Dropout
 from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.models import load_model
 
-#The chatbot is going to use a json file to learn how to answer different types of similar questions
-#In the intents.json file we can see how different similar questions have same answer
+#The chatbot is going to use a JSON file to learn how to answer different types of similar questions
+#In the intents.JSON file we can see how different similar questions have same answer
 
