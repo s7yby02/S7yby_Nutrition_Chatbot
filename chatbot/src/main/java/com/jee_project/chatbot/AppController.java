@@ -6,8 +6,13 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class AppController {
     
-    @GetMapping("/index")
+    @GetMapping("/home")
     public String goHome() {
-        return "index";
+        return "home";
+    }
+
+    @GetMapping("/login")
+    public String goLogin() {
+        return "login";
     }
 }
