@@ -81,9 +81,9 @@ trainY = training[:, len(words):]
 #Dropout layers are used to create a model capable of generalizing to all possible scenarios.
 model = tf.keras.Sequential()
 model.add(tf.keras.layers.Dense(128, input_shape=(len(trainX[0]),), activation = 'tanh'))
-model.add(tf.keras.layers.Dropout(0.5))
+model.add(tf.keras.layers.Dropout(0.2))
 model.add(tf.keras.layers.Dense(64, activation = 'tanh'))
-model.add(tf.keras.layers.Dropout(0.5))
+model.add(tf.keras.layers.Dropout(0.2))
 model.add(tf.keras.layers.Dense(len(trainY[0]), activation='softmax'))
 model.compile(loss='categorical_crossentropy', optimizer=Adam(), metrics=['accuracy'])
 model.fit(trainX, trainY, epochs=200, batch_size=5, verbose=1)
