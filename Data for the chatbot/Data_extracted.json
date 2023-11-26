@@ -1,0 +1,35 @@
+[
+  {
+    "tag": "injury_prevention_bodybuilding",
+    "patterns": [
+      "Preventing injuries in bodybuilding",
+      "Injury prevention strategies",
+      "Protecting joints during workouts"
+    ],
+    "responses": [
+      "Prioritize proper warm-ups, use correct form, incorporate rest days, and listen to your body to reduce the risk of injuries in bodybuilding."
+    ]
+  },
+  {
+    "tag": "bodybuilding_supplements_guide",
+    "patterns": [
+      "Guide to bodybuilding supplements",
+      "Essential supplements for bodybuilders",
+      "Supplementing for muscle growth"
+    ],
+    "responses": [
+      "Common bodybuilding supplements include protein powder, creatine, BCAAs, and multivitamins. Consult with a healthcare professional before adding new supplements."
+    ]
+  },
+  {
+    "tag": "example_tag",
+    "patterns": [
+      "example pattern 1",
+      "example pattern 2"
+    ],
+    "responses": [
+      "example response 1",
+      "example response 2"
+    ]
+  }
+]
