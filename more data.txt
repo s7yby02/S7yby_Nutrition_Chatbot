@@ -460,10 +460,6 @@
     "patterns": ["Mental focus in bodybuilding", "Mind-body connection", "Concentration during workouts"],
     "responses": ["Develop mental focus through mindfulness, visualization, and setting clear workout goals. A strong mind-body connection can enhance overall performance."]
   },
- {
-    "tag": "bodybuilding_mental_focus",
-    "patterns": ["Mental focus in bodybuilding", "Mind-body connection", "Concentration during workouts"],
-    "responses": ["Develop mental focus through mindfulness, visualization, and setting clear workout goals. A strong mind-body connection can enhance overall performance."]
-  },
+
 
 ]
