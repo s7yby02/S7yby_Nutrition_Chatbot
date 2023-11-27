@@ -4,7 +4,7 @@
 
 ## Team Members:
 
-As dedicated data engineering students, we thrive on expanding our skill sets through innovative projects that leave a meaningful impact. Meet our team members:
+As dedicated data engineering students, we thrive on expanding our skill sets through innovative projects that leave a meaningful impact. Meet our team members :
 
 - [ELHARRAN Ayoub](https://github.com/AybELHARRAN)
 
