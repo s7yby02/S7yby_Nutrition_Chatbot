@@ -1,3 +1,19 @@
+$(document).ready(function(){
+  const chatInput = document.getElementById("chat-input");
+  chatInput.addEventListener('keypress', evt=>{
+      if(evt.key === "Enter") {
+          sendMessage();
+      };
+  });
+  
+  const chatSubmit = document.getElementById("chat-submit");
+  chatSubmit.addEventListener("click", ()=>{
+      sendMessage();
+  });
+})
+
+
+
 function addLeftMessage(message) {
   const chatBody = document.getElementById("chat-body"),
     leftMessage = document.createElement("div"),
@@ -7,7 +23,7 @@ function addLeftMessage(message) {
   leftMessage.className = "left-message";
   icon.className = "icon";
   icon.alt = "icon";
-  icon.src = "imgs/bot-icon.png";
+  icon.src = "assets/img/chatbot/bot-icon.png";
   span.textContent = message;
 
   leftMessage.appendChild(icon);
@@ -24,7 +40,7 @@ function addRightMessage(message) {
   rightMessage.className = "right-message";
   icon.className = "icon";
   icon.alt = "icon";
-  icon.src = "imgs/user-icon.png";
+  icon.src = "assets/img/chatbot/user-icon.png";
   span.textContent = message;
 
   rightMessage.appendChild(icon);
