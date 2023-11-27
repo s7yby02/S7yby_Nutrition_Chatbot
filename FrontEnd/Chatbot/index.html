@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="ÜTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Time App</title>
+  </head>
+  <body>
+    <div class="chat-container" style="background-image: url('bg_chat.jpg');">
+      <div class="chat">
+        <div class="chat-header" style="text-transform: uppercase;">Welcomeuser. let’s chat</div>
+        <div class="chat-body" id="chat-body">
+          <div class="left-message">
+            <img src="bot-icon.png" alt="icon" class="icon" />
+            <span>left-message</span>
+          </div>
+          <div class="right-message">
+            <img src="user-icon.png" alt="icon" class="icon" />
+            <span>right-message</span>
+          </div>
+        </div>
+        <div class="chat-foot">
+          <input type="text" id="chat-input" class="chat-input" placeholder="Send a message">
+          <button type="submit" class="chat-submit" id="chat-submit">📤</button>
+        </div>
+      </div>
+    </div>
+    
+    <script src="plugins/jquery_3.7.1.min.js"></script>
+    <script src="main.js"></script>
+    <script src="listeners.js"></script>
+  </body>
+</html>
