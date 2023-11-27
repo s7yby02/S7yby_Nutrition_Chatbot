@@ -203,7 +203,8 @@
   {
     "tag": "time_management",
     "patterns": ["Time management tips", "Productivity techniques", "Balancing work and life"],
-    "responses": ["Prioritizing tasks, setting realistic deadlines, and}
+    "responses": ["Prioritizing tasks, setting realistic deadlines, and]
+  },
 
   {
     "tag": "stress_management",
@@ -298,7 +299,7 @@
   {
     "tag": "mindset_shift",
     "patterns": ["Shifting mindset", "Changing perspective", "Adopting a growth mindset"],
-    "responses": ["Embracing challenges as opportunities for growth, learning from setbacks, and fostering a positive outlook
+    "responses": ["Embracing challenges as opportunities for growth, learning from setbacks, and fostering a positive outlook"]
 },
 {
     "tag": "injury_prevention_bodybuilding",
