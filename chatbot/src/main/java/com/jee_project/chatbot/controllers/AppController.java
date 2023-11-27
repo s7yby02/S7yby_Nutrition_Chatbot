@@ -19,4 +19,8 @@ public class AppController {
     public String goRegister() {
         return "register";
     }
+    @GetMapping("/chat")
+    public String goChat() {
+        return "chat";
+    }
 }
