@@ -1,0 +1,146 @@
+/*#########################
+   General styles 
+  #########################*/
+
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+
+/*#########################
+   Chat styles 
+  #########################*/
+.chat-container{
+  width: 100%;
+  height: 100vh;
+  background-position: center center;
+  background-size: cover;
+}
+.chat {
+  width: 70%;
+  height: 100%;
+  margin: auto;
+  display: grid;
+  grid-template-rows: 50px 1fr 90px;
+}
+@media (max-width: 720px) {
+  .chat{
+    width: 95%;
+  }
+}
+
+@media (min-width: 720px) and (max-width: 1200px) {
+  .chat{
+    width: 80%;
+  }
+}
+/* Chat header*/
+.chat-header {
+  display: flex;
+  color: #fff;
+  font-size: larger;
+  font-weight: bolder;
+  background-color: #5fa8dd;
+  justify-content: center;
+  border-top-right-radius: 12px;
+  border-top-left-radius: 12px;
+  align-items: center;
+}
+
+/* Chat body*/
+.chat-body {
+  display: flex;
+  background-color: #d7f0f9;
+  flex-direction: column;
+  gap: 10px;
+  padding: 12px 8px;
+}
+.left-message {
+  display: flex;
+  height: auto;
+  width: 100%;
+  /* background-color: lightsalmon; */
+}
+.left-message .icon {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+.left-message span {
+  display: flex;
+  margin-left: 5px;
+  flex: 1;
+  background-color: #65b4e4;
+  border-radius: 12px;
+  padding: 5px;
+  padding-left: 12px;
+  align-items: center;
+}
+
+.right-message {
+  display: flex;
+  height: auto;
+  width: 100%;
+  /* background-color: lightsalmon; */
+  direction: rtl;
+  text-align: left;
+}
+.right-message .icon {
+  border-radius: 50%;
+  height: 50px;
+  width: 50px;
+}
+.right-message span {
+  margin-right: 5px;
+  flex: 1;
+  display: flex;
+  background-color: #65b4e4;
+  border-radius: 12px;
+  padding: 5px;
+  padding-left: 12px;
+  align-items: center;
+  direction: ltr;
+}
+
+/* Chat header*/
+.chat-foot {
+  display: flex;
+  background-color: #5fa8dd;
+  justify-content: center;
+  align-items: center;
+}
+.chat-input {
+  flex: 1;
+  height: 50%;
+  margin: 10px 5px 10px 10px;
+  border: none;
+  outline: none;
+  padding-left: 10px;
+  transition-property: all;
+  transition-duration: .2s;
+  border-radius: 5px;
+  font-size: medium;
+}
+.chat-input:hover{
+  scale: 1.01;
+}
+.chat-input:focus{
+  scale: 1.01;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+.chat-submit{
+  width: 60px;
+  height: 50%;
+  text-align: center;
+  margin-right: 10px;
+  border: none;
+  transition-property: all;
+  transition-duration: .1s;
+  border-radius: 5px;
+  font-size: 30px;
+}
+.chat-submit:hover{
+  scale: 1.02;
+  background-color: rgba(255, 255, 255, 0.9);
+}
