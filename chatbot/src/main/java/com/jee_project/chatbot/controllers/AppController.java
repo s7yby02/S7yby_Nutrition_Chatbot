@@ -7,20 +7,25 @@ import org.springframework.web.bind.annotation.GetMapping;
 public class AppController {
     
     @GetMapping("/")
-    public String goHome() {
+    public String home() {
         return "home";
     }
 
     @GetMapping("/login")
-    public String goLogin() {
+    public String login() {
         return "login";
     }
+    @GetMapping("/logout")
+    public String logout() {
+        return "login";
+    }
+
     @GetMapping("/register")
-    public String goRegister() {
+    public String register() {
         return "register";
     }
     @GetMapping("/chat")
-    public String goChat() {
+    public String chat() {
         return "chat";
     }
 }
