@@ -44,6 +44,8 @@ public class AppController {
     public String registration(@Valid @ModelAttribute("user") UserDto userDto,
                                BindingResult result,
                                Model model){
+        
+        System.out.println(userDto); // print userDto
         User existingUser = userService.findUserByEmail(userDto.getEmail());
 
         if(existingUser != null && existingUser.getEmail() != null && !existingUser.getEmail().isEmpty()){
@@ -52,6 +54,7 @@ public class AppController {
         }
 
         if(result.hasErrors()){
+            System.out.println(result.getAllErrors()); // print all errors
             model.addAttribute("user", userDto);
             return "/register";
         }

@@ -39,11 +39,11 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a class="nav-link scrollto " href="home.html#hero">Home</a></li>
+          <li><a class="nav-link scrollto " th:href="@{/index}">Home</a></li>
           <li><a class="nav-link scrollto" href="home.html#values">Services</a></li>
-          <li><a class="nav-link scrollto" href="login.html">Log in</a></li>
+          <li><a class="nav-link scrollto" th:href="@{/login}">Log in</a></li>
           <li><a class="nav-link scrollto" href="home.html#contact">Contact us</a></li>
-          <li><a class="getstarted scrollto" href="chat.html">Chat now</a></li>
+          <li><a class="getstarted scrollto" th:href="@{/chat}">Chat now</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -70,7 +70,7 @@
           </h2>
           <div data-aos="fade-up" data-aos-delay="600">
             <div class="text-center text-lg-start">
-              <a th:href="{@/chat}" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
+              <a th:href="@{/chat}" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
                 <span>Chat now</span>
                 <i class="bi bi-arrow-right"></i>
               </a>

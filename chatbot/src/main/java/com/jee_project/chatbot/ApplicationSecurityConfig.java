@@ -33,11 +33,12 @@ public class ApplicationSecurityConfig {
                                 .requestMatchers("/login","/ressources/**","/assets/img/**","/assets/css/**","/assets/js/**","/assets/vendor/**").permitAll()
                                 .requestMatchers("/index","/ressources/**","/assets/img/**","/assets/css/**","/assets/js/**","/assets/vendor/**").permitAll()
                                 .requestMatchers("/register","/ressources/**","/assets/img/**","/assets/css/**","/assets/js/**","/assets/vendor/**").permitAll()
+                                .anyRequest().permitAll()
                 ).formLogin(
                         form -> form
                                 .loginPage("/login")
                                 .loginProcessingUrl("/login")
-                                .defaultSuccessUrl("/index")
+                                .defaultSuccessUrl("/chat")
                                 .permitAll()
                 ).logout(
                         logout -> logout
