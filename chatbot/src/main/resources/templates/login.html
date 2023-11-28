@@ -68,13 +68,15 @@
     <div class="row gy-4">
 
       <div class="col-lg-6">
+
+
         <form th:action="@{/login}" method="post" class="php-email-form">
           <div class="row gy-4">
 
             <header class="section-header">
                 <p>Sign in</p>
                 <div class="col-md-12 mt-4" >
-                  If you don't have an account register You can <a href="register.html">Register here !</a>
+                  If you don't have an account register You can <a th:href="@{/register}">Register here !</a>
                 </div>
             </header>
 
@@ -93,6 +95,9 @@
 
           </div>
         </form>
+
+
+        
       </div>
 
       <div class="col-lg-6">

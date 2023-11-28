@@ -69,23 +69,26 @@
 
       <div class="col-lg-6">
         <form action="@{/users/addNew}" method="post" class="php-email-form">
+          <div style="text-align:center; font-size:20px; color:green; font-weight:bold">  
+            <span th:utext="${message}"></span> 
+          </div>
           <div class="row gy-4">
 
             <header class="section-header">
                 <p>Sign up</p>
                 <div class="col-md-12 mt-4" >
-                  If you already have an account register You can <a href="login.html">Login here !</a>
+                  If you already have an account register You can <a th:href="@{/login}">Login here !</a>
                 </div>
             </header>
 
             <div class="col-md-12 ">
-              <input type="text" class="form-control" name="email" placeholder="Enter your username" required="">
+              <input type="text" class="form-control" name="username" placeholder="Enter your username" required="">
             </div><br>
             <div class="col-md-12 ">
               <input type="password" class="form-control" name="password" placeholder="Enter your Password" id="password" required="">
             </div><br>
             <div class="col-md-12">
-              <input type="password" class="form-control" placeholder="Confrim your Password" id="confirmPassword" required="">
+              <input type="password" class="form-control" placeholder="Confirm your Password" id="confirmPassword" required="">
             </div>
 
             <div class="col-md-12 text-center">
@@ -122,9 +125,10 @@
 
   <!-- Template Main JS File -->
   <script th:src="@{assets/js/main.js}"></script>
+  <script th:src="@{assets/vendor/jquery/jquery_3.7.1.min.js}"></script>
+  <script th:src="@{assets/vendor/bootstrap/js/bootstrap.min.js}"></script>
 
   <script th:src="@{assets/js/register.js}"></script>
-
 </body>
 
 </html>
