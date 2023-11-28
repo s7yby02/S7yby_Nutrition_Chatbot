@@ -1,13 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
   <title>S7yby Nutrition Chatbot</title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
 
   <!-- Favicons -->
   <link th:href="@{assets/img/favicon.png}" rel="icon">
@@ -66,11 +64,16 @@
   <div class="container aos-init aos-animate" data-aos="fade-up">
 
     <div class="row gy-4">
-
+      <div th:if="${param.error}">
+        <div class="alert alert-danger">Invalid Email or Password</div>
+        </div>
+      <div th:if="${param.logout}">
+        <div class="alert alert-success"> You have been logged out.</div>
+      </div>
       <div class="col-lg-6">
 
-
-        <form th:action="@{/login}" method="post" class="php-email-form">
+        <!--===========LOGIN FORM================-->
+        <form th:action="@{/login}" role="form" method="post" class="php-email-form">
           <div class="row gy-4">
 
             <header class="section-header">
@@ -81,14 +84,12 @@
             </header>
 
             <div class="col-md-12 ">
-              <input type="text" class="form-control" name="username" placeholder="Enter your username" required="">
+              <input type="text" class="form-control" id="username" name="username" placeholder="Enter your email address" required="">
             </div><br>
             <div class="col-md-12">
-              <input type="password" class="form-control" name="password" placeholder="Enter your Password" required="">
+              <input type="password" id="password" class="form-control" name="password" placeholder="Enter your Password" required="">
             </div>
-             <!-- CSRF Token -->
-             <input type="hidden" th:name="${_csrf.parameterName}" th:value="${_csrf.token}"/>
-
+             
             <div class="col-md-12 text-center">
               <button type="submit">Sign In</button>
             </div>
