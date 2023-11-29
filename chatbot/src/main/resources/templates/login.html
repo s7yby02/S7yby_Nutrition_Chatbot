@@ -67,6 +67,11 @@
       <div th:if="${param.logout}">
         <div class="alert alert-success"> You have been logged out.</div>
       </div>
+      <!-- Add this somewhere in your login Thymeleaf template -->
+      <div th:if="${registrationSuccess}">
+        <p th:text="${registrationSuccess}" class="alert alert-success"></p>
+      </div>
+
       <div class="col-lg-6">
 
         <!--===========LOGIN FORM================-->

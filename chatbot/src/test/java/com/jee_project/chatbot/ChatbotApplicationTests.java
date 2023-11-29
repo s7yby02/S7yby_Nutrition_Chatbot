@@ -16,9 +16,9 @@ class ChatbotApplicationTests {
 	void contextLoads() {
 		
 		UserDto newUser = new UserDto();
-		newUser.setFirstName("Test");
-		newUser.setLastName("User");
-		newUser.setEmail("testuser@example.com");
+		newUser.setFirstName("Ayoub");
+		newUser.setLastName("ELHARRAN");
+		newUser.setEmail("test@test.com");
 		newUser.setPassword("password");
 
 		userService.saveUser(newUser);

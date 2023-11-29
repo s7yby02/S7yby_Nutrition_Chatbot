@@ -6,6 +6,8 @@ import org.springframework.validation.BindingResult;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.servlet.mvc.support.RedirectAttributes;
+
 
 import com.jee_project.chatbot.models.User;
 import com.jee_project.chatbot.models.UserDto;
@@ -43,9 +45,8 @@ public class AppController {
     @PostMapping("/register/save")
     public String registration(@Valid @ModelAttribute("user") UserDto userDto,
                                BindingResult result,
-                               Model model){
+                               Model model,RedirectAttributes redirectAttributes){
         
-        System.out.println(userDto); // print userDto
         User existingUser = userService.findUserByEmail(userDto.getEmail());
 
         if(existingUser != null && existingUser.getEmail() != null && !existingUser.getEmail().isEmpty()){
@@ -54,13 +55,14 @@ public class AppController {
         }
 
         if(result.hasErrors()){
-            System.out.println(result.getAllErrors()); // print all errors
             model.addAttribute("user", userDto);
             return "/register";
         }
 
         userService.saveUser(userDto);
-        return "redirect:/register?success";
+
+        redirectAttributes.addFlashAttribute("registrationSuccess", "Registration successful! You can now log in.");
+        return "redirect:/login";
     }
 
     @GetMapping("/chat")

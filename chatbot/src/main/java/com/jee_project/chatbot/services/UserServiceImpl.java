@@ -10,6 +10,8 @@ import com.jee_project.chatbot.models.User;
 import com.jee_project.chatbot.models.UserDto;
 import com.jee_project.chatbot.repositories.UserRepository;
 
+import jakarta.transaction.Transactional;
+
 @Service
 public class UserServiceImpl implements UserService {
 
@@ -22,6 +24,7 @@ public class UserServiceImpl implements UserService {
         this.passwordEncoder = passwordEncoder;
     }
 
+    @Transactional
     @Override
     public void saveUser(UserDto userDto) {
         User user = new User();
