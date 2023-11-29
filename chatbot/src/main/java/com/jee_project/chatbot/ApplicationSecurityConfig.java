@@ -33,7 +33,7 @@ public class ApplicationSecurityConfig {
                                 .requestMatchers("/login","/ressources/**","/assets/img/**","/assets/css/**","/assets/js/**","/assets/vendor/**").permitAll()
                                 .requestMatchers("/index","/ressources/**","/assets/img/**","/assets/css/**","/assets/js/**","/assets/vendor/**").permitAll()
                                 .requestMatchers("/register","/ressources/**","/assets/img/**","/assets/css/**","/assets/js/**","/assets/vendor/**").permitAll()
-                                .requestMatchers("/chat").authenticated()
+                                .requestMatchers("/chat","/ressources/**","/assets/img/**","/assets/css/**","/assets/js/**","/assets/vendor/**").authenticated()
                                 .anyRequest().permitAll()
                 ).formLogin(
                         form -> form
