@@ -41,7 +41,8 @@
         <ul>
           <li><a class="nav-link scrollto " th:href="@{/index}">Home</a></li>
           <li><a class="nav-link scrollto" href="home.html#values">Services</a></li>
-          <li><a class="nav-link scrollto" th:href="@{/login}">Log in</a></li>
+          <li th:if="${#authentication == null}"><a class="nav-link scrollto" th:href="@{/login}">Log in</a></li>
+          <li th:unless="${#authentication == null}"><a class="nav-link scrollto" th:href="@{/logout}">Logout</a></li>
           <li><a class="nav-link scrollto" href="home.html#contact">Contact us</a></li>
           <li><a class="getstarted scrollto" th:href="@{/chat}">Chat now</a></li>
         </ul>
