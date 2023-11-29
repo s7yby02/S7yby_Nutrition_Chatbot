@@ -17,7 +17,6 @@ import lombok.NoArgsConstructor;
 @Table(name = "users")
 public class User {
     
-    private static final long serialVersionUID = 1L;
 
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
