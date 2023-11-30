@@ -1,8 +1,8 @@
 # S7yby_Nutrition_Chatbot
-## Overview: 
+## Overview 
 *S7yby_Nutrition* is a web application dedicated to assisting bodybuilders in optimizing their nutrition plans. It provides a comprehensive solution for achieving fitness goals with a user-friendly interface, robust features, and machine learning-based techniques.
 
-## Team Members:
+## Team Members
 
 As dedicated data engineering students, we thrive on expanding our skill sets through innovative projects that leave a meaningful impact. Meet our team members :
 
@@ -45,14 +45,16 @@ As dedicated data engineering students, we thrive on expanding our skill sets th
       ***Keras*** is a high-level neural networks API written in Python that serves as an interface for building and training neural networks. Originally a separate library, Keras has been integrated as the official high-level API into TensorFlow since version 2.0. Keras abstracts and simplifies the construction of neural networks, offering a user-friendly interface without sacrificing flexibility. It allows rapid prototyping of deep learning models, emphasizing modularity, ease of use, and extensibility. Keras can run seamlessly on top of various deep learning frameworks, with TensorFlow being the primary backend.
     
 ## Project Workflow
-### Data Collection:
+#### Data Collection
 - Efficiently gather data from various free and reliable websites.
-### Chatbot Logic:
+#### Chatbot Logic:
 - *S7yby_Nutrition_chatbot* is a robust multiclass machine learning system.
 - Learns patterns from intents.json to provide users with accurate responses tailored to specific questions.
 - The chatbot extends support by recommending meals tailored to meet users' nutritional requirements: Offering information and links to resources where users can find detailed insights 
 about the recommended meals.
-## Project Implementation
+## Application Overview
+- ***Login Page***
+  
 
 
 ## Installation:
