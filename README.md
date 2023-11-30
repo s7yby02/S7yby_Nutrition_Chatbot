@@ -54,7 +54,24 @@ As dedicated data engineering students, we thrive on expanding our skill sets th
 about the recommended meals.
 ## Application Overview
 - ***Login Page***
-  
+
+<img src="/readmeimgs/login.png" alt="Login Page" width="300" height="200">
+
+- ***Register Page***
+
+<img src="/readmeimgs/register.png" alt="Register Page" width="300" height="200">
+
+- ***Home Page***
+
+<img src="/readmeimgs/index.png" alt="Index Page" width="300" height="200">
+
+- ***Chatbot***
+
+<img src="/readmeimgs/bot.png" alt="Chatbot" width="300" height="200">
+
+- ***Database with password encrypted***
+
+<img src="/readmeimgs/db.png" alt="db" width="300" height="200">
 
 
 ## Installation:
