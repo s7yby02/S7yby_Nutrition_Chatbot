@@ -52,7 +52,7 @@ As dedicated data engineering students, we thrive on expanding our skill sets th
 - We used ***Spring Boot*** to develop our web application, ***Thymeleaf*** to create the front end of our application, ***Spring Security*** to secure our application, ***MySQL*** to store our data, ***JPA*** to connect our application to the database, ***BCrypt*** to encrypt the password of our users, ***Hibernate*** to map our database to our application, ***Maven*** to manage our dependencies, ***Tomcat*** to run our application, ***Spring Boot Data*** to manage our data, ***Spring MVC*** to create our controllers, ***Spring AOP*** to create our aspects, ***Spring Boot Test*** to test our application, ***Spring Web Services*** to create our web services, ***Spring Boot Web*** to create our web application, ***Spring Web Services*** to create our web services, ***Spring Boot Security*** to secure our application.
 #### Front End
 - We used ***HTML*** to create the structure of our web pages, ***CSS*** to style our web pages, ***JavaScript*** to add dynamic behavior to our web pages, ***Bootstrap*** to create our web pages, ***JQuery*** to add dynamic behavior to our web pages, ***AJAX*** to send asynchronous requests to our web services, ***JSON*** to send data between our web pages and our web services.
-- ### Machine learning model
+### Machine learning model
   - We used ***TensorFlow***, ***Keras*** and ***Python*** to build our model. We used ***Jupyter Notebook*** to test and create the model. We used ***NLTK*** because we're developping a chatbot that will interact with the text that we send to it . And to save and build the model we used ***Pickle*** library.
 #### Chatbot Logic:
 - *S7yby_Nutrition_chatbot* is a robust multiclass machine learning system.
