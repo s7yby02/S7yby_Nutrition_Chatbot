@@ -55,23 +55,23 @@ about the recommended meals.
 ## Application Overview
 - ***Login Page***
 
-<img src="/readmeimgs/login.png" alt="Login Page" width="300" height="200">
+<img src="/readmeimgs/login.png" alt="Login Page" width="1000" height="600">
 
 - ***Register Page***
 
-<img src="/readmeimgs/register.png" alt="Register Page" width="300" height="200">
+<img src="/readmeimgs/register.png" alt="Register Page" width="1000" height="600">
 
 - ***Home Page***
 
-<img src="/readmeimgs/index.png" alt="Index Page" width="300" height="200">
+<img src="/readmeimgs/index.png" alt="Index Page" width="1000" height="600">
 
 - ***Chatbot***
 
-<img src="/readmeimgs/bot.png" alt="Chatbot" width="300" height="200">
+<img src="/readmeimgs/bot.png" alt="Chatbot" width="1000" height="600">
 
 - ***Database with password encrypted***
 
-<img src="/readmeimgs/db.png" alt="db" width="300" height="200">
+<img src="/readmeimgs/db.png" alt="db" width="1000" height="600">
 
 
 ## Installation:
