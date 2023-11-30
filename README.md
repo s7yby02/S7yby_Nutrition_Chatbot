@@ -46,7 +46,14 @@ As dedicated data engineering students, we thrive on expanding our skill sets th
     
 ## Project Workflow
 #### Data Collection
-- Efficiently gather data from various free and reliable websites.
+- Efficiently gather data from various free and reliable websites. Cause we are using a machine learning model, we need to collect a large amount of data to train our model. We used a web scraping technique to collect data from the web and also collecting some data manually. We used ***BeautifulSoup***, ***requests*** library to scrape data from the web. And it was the hardest part of the project. 
+#### Web Application Development
+##### Back End
+- We used ***Spring Boot*** to develop our web application, ***Thymeleaf*** to create the front end of our application, ***Spring Security*** to secure our application, ***MySQL*** to store our data, ***JPA*** to connect our application to the database, ***BCrypt*** to encrypt the password of our users, ***Hibernate*** to map our database to our application, ***Maven*** to manage our dependencies, ***Tomcat*** to run our application, ***Spring Boot Data*** to manage our data, ***Spring MVC*** to create our controllers, ***Spring AOP*** to create our aspects, ***Spring Boot Test*** to test our application, ***Spring Web Services*** to create our web services, ***Spring Boot Web*** to create our web application, ***Spring Web Services*** to create our web services, ***Spring Boot Security*** to secure our application.
+#### Front End
+- We used ***HTML*** to create the structure of our web pages, ***CSS*** to style our web pages, ***JavaScript*** to add dynamic behavior to our web pages, ***Bootstrap*** to create our web pages, ***JQuery*** to add dynamic behavior to our web pages, ***AJAX*** to send asynchronous requests to our web services, ***JSON*** to send data between our web pages and our web services.
+- ### Machine learning model
+  - We used ***TensorFlow***, ***Keras*** and ***Python*** to build our model. We used ***Jupyter Notebook*** to test and create the model. We used ***NLTK*** because we're developping a chatbot that will interact with the text that we send to it . And to save and build the model we used ***Pickle*** library.
 #### Chatbot Logic:
 - *S7yby_Nutrition_chatbot* is a robust multiclass machine learning system.
 - Learns patterns from intents.json to provide users with accurate responses tailored to specific questions.
