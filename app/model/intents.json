@@ -17,7 +17,7 @@
     "responses": ["I don't have age"]
     },
     {"tag": "name",
-    "patterns": ["what is your name", "what should I call you", "whats your name?", "Hi, how old are you?","Can you tell me your name"],
+    "patterns": ["what is your name", "what should I call you", "whats your name?", "Hi, how old are you?","Can you tell me your name","who are you"],
     "responses": ["You can call me S7yby!", "I'm S7yby!", "I'm S7yby your nutrition assistant"]
     },
     {"tag": "functionality",

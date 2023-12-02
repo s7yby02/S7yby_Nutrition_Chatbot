@@ -7,6 +7,7 @@ import numpy as np
 from nltk.stem import WordNetLemmatizer
 import tensorflow as tf
 from tensorflow.keras.models import load_model
+import os
 nltk.download('wordnet')
 #The chatbot is going to use a JSON file to learn how to answer different types of similar questions.
 #In the intents.JSON file we can see how different similar questions have same answer.
@@ -15,10 +16,14 @@ print(np.__version__)
 print(tf.__version__)
 #Lemmatizer init & loading intents, words, classes and the trained model we have saved.
 lemmatizer = WordNetLemmatizer()
-intents = json.loads(open('app\model\intents.json').read())
-words = pickle.load(open('app\model\words.pkl', 'rb'))
-classes = pickle.load(open('app\model\classes.pkl', 'rb'))
-model = load_model('app\model\chatbot_model.h5')
+
+# Get the directory of the current file
+dir_path = os.path.dirname(os.path.realpath(__file__))
+
+intents = json.loads(open(os.path.join(dir_path, 'intents.json')).read())
+words = pickle.load(open(os.path.join(dir_path, 'words.pkl'), 'rb'))
+classes = pickle.load(open(os.path.join(dir_path, 'classes.pkl'), 'rb'))
+model = load_model(os.path.join(dir_path, 'chatbot_model.h5'))
 
 
 #This function cleans up each sentence given to it following these steps:
@@ -70,10 +75,10 @@ def get_response(intents_list, intents_json):
     return result #Returns the selected response.
 
 
-#Chat with Syby!
+'''#Chat with S7yby!
 print("GO! Bot is running!")
 while True:
     message=input("")
     ints = predict_class(message)
     res = get_response(ints, intents)
-    print(res)
+    print(res)'''

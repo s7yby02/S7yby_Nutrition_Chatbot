@@ -10,14 +10,18 @@ from tensorflow.keras.models import Sequential
 from tensorflow. keras.layers import Dense, Activation, Dropout
 from tensorflow.keras.optimizers import Adam
 from tensorflow.keras.models import load_model 
-
+import os
 #You may also need to download punkt and wordnet from nltk using: nltk.download('punkt') & nltk.download('wordnet').
 
 
 #In this section we're going to prepare the training data using basic NLP techniques and library: nltk.
 #Lemmatizer initialization & Loading the JSON file.
 lemmatizer = WordNetLemmatizer()
-intents = json.loads(open('intents.json').read())
+
+file_path = os.path.realpath(__file__)
+dir_path = os.path.dirname(file_path)
+path = os.path.join(dir_path,'intents.json')
+intents = json.loads(open(path).read())
 
 #Lists to store words, classes and documents and the letters to ignore while storing ...
 words = []
