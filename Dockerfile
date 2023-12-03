@@ -1,7 +1,23 @@
-FROM tiangolo/uvicorn-gunicorn-fastapi:python3.9
+# Use the official Python image as a base image
+FROM python:3.9
 
-COPY ./requirements.txt /app/requirements.txt
+# Set the working directory inside the container
+WORKDIR /code
 
-RUN pip install --no-cache-dir --upgrade -r /app/requirements.txt
+# Copy the requirements.txt file into the container at /code/
+COPY ./requirements.txt /code/requirements.txt
 
-COPY ./app /app/app
+# Install the dependencies
+RUN pip install --no-cache-dir --upgrade -r /code/requirements.txt
+
+# Download NLTK data
+RUN python -m nltk.downloader punkt
+
+# Copy the entire project into the container at /code/
+COPY ./ /code/
+
+# Set the working directory to /code/app
+WORKDIR /code/app
+
+# Command to run the application
+CMD ["uvicorn", "main:app", "--host", "0.0.0.0", "--port", "80"]

@@ -4,6 +4,7 @@ import json
 from model.model import predict_class, get_response
 import os
 
+
 app = FastAPI()
 
 class Message(BaseModel):

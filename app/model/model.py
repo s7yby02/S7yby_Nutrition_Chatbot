@@ -5,15 +5,12 @@ import json
 import pickle
 import numpy as np
 from nltk.stem import WordNetLemmatizer
-import tensorflow as tf
 from tensorflow.keras.models import load_model
 import os
 nltk.download('wordnet')
 #The chatbot is going to use a JSON file to learn how to answer different types of similar questions.
 #In the intents.JSON file we can see how different similar questions have same answer.
-print(nltk.__version__)
-print(np.__version__)
-print(tf.__version__)
+
 #Lemmatizer init & loading intents, words, classes and the trained model we have saved.
 lemmatizer = WordNetLemmatizer()
 
