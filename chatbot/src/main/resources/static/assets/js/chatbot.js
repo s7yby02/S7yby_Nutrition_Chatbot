@@ -55,15 +55,16 @@ function sendMessage() {
 
   addRightMessage(chatInputContent);
   chatInput.value = '';
-  
+
   $.ajax({
-    url: '/get_message',
+    url: "/api/chat",
     method : 'POST',
-    data: {
-        message : chatInputContent
-    },
+    contentType: "application/json",
+    data: JSON.stringify({
+        text : chatInputContent
+    }),
     success: function(response){
-        console.log(response);
+        addLeftMessage(response);
     },
     error: function(xhr, status, error){
         console.log(error);

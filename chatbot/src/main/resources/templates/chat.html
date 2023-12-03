@@ -159,13 +159,16 @@ function sendMessage() {
   chatInput.value = '';
   
   $.ajax({
-    url: /*[[@{/get_message}]]*/ "",
+    url: /*[[@{/api/chat}]]*/ "",
     method : 'POST',
-    data: {
-        message : chatInputContent
-    },
+    contentType: 'application/json',
+    data: JSON.stringify({
+        text : chatInputContent
+    }),
     success: function(response){
-        console.log(response);
+      var parsedResponse = JSON.parse(response);
+      addLeftMessage(parsedResponse.response);
+      console.log(parsedResponse);
     },
     error: function(xhr, status, error){
         console.log(error);

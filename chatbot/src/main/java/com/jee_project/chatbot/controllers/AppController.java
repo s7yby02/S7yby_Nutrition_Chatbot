@@ -1,5 +1,6 @@
 package com.jee_project.chatbot.controllers;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.validation.BindingResult;
@@ -8,7 +9,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.servlet.mvc.support.RedirectAttributes;
 
-
+import com.jee_project.chatbot.models.Message;
 import com.jee_project.chatbot.models.User;
 import com.jee_project.chatbot.models.UserDto;
 import com.jee_project.chatbot.services.UserService;
@@ -66,7 +67,19 @@ public class AppController {
     }
 
     @GetMapping("/chat")
-    public String chat() {
+    public String chat(Model model) {
+        Message message = new Message();
+        model.addAttribute("message", message);
+        return "chat";
+    }
+
+    @Autowired
+    private MachineLearningController machineLearningController;
+    
+    @PostMapping("/chat")
+    public String chatResponse(@ModelAttribute("message") Message message, Model model) {
+        String response = machineLearningController.chat(message);
+        model.addAttribute("response", response);
         return "chat";
     }
 }
