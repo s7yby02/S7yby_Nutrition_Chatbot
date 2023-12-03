@@ -27,14 +27,14 @@ As dedicated data engineering students, we thrive on expanding our skill sets th
      <img src="https://miro.medium.com/v2/resize:fit:5120/1*l4xICbIIYlz1OTymWCoUTw.jpeg" alt="Front End" width="300" height="200">
 
       Frontend development encompasses the creation of the user interface and user experience on the web. ***HTML*** serves as the building blocks, structuring content, while ***CSS*** styles and formats it, defining layout and visual presentation. ***JavaScript*** adds dynamic behavior, facilitating interactive features and real-time updates. Responsive design ensures adaptability across diverse devices.
-- ### BackEnd
+- ### BackEnd 
   - **SpringBoot**
 
      <img src="https://user-images.githubusercontent.com/84719774/129191080-723b3b46-4e0b-4aa5-8eb9-654c2c025b18.png" alt="Spring Boot" width="300" height="100">
      
       *Spring Boot* is an open-source Java framework that simplifies the development of production-ready, stand-alone Spring-based applications. It provides a convention-over-configuration approach, reducing boilerplate code and configuration, and integrates seamlessly with the Spring ecosystem. With built-in support for embedded servers, dependency management, and auto-configuration, Spring Boot enables developers to rapidly build and deploy robust, scalable, and easily maintainable applications. It promotes best practices and focuses on convention, allowing developers to concentrate on business logic rather than complex setups, making it an excellent choice for building microservices and modern web applications.
 - ### Machine learning model
-  - **TensorFlow&Keras**
+  - **TensorFlow&Keras - Model Development**
          <img src="https://3.bp.blogspot.com/-QZVBl08fmPk/XhO909Ha1dI/AAAAAAAACZI/q1a1UykGKe0KDUZ_ZITtWmM7bBJFRrvPQCLcBGAsYHQ/s1600/tensorflowkeras.jpg" alt="TensorFlow&Keras" width="300" height="150">
 
     - **TensorFlow**
@@ -43,7 +43,18 @@ As dedicated data engineering students, we thrive on expanding our skill sets th
     - **Keras**
    
       ***Keras*** is a high-level neural networks API written in Python that serves as an interface for building and training neural networks. Originally a separate library, Keras has been integrated as the official high-level API into TensorFlow since version 2.0. Keras abstracts and simplifies the construction of neural networks, offering a user-friendly interface without sacrificing flexibility. It allows rapid prototyping of deep learning models, emphasizing modularity, ease of use, and extensibility. Keras can run seamlessly on top of various deep learning frameworks, with TensorFlow being the primary backend.
-    
+  - **FastApi&Docker - Model Deployment**
+
+        <img src="readmeimgs\fast.png" alt="FastApi&Docker" width="300" height="150">
+
+    - **FastApi**
+
+      ***FastAPI*** is a modern, fast (high-performance), web framework for building APIs with Python 3.6+ based on standard Python type hints. It is inspired by APIStar, but it is not a fork. It is designed to be high-performance, asynchronous, and ready to serve production workloads. It is powered by Starlette and Pydantic. It is a class-based API framework that is built on top of Starlette, which is a lightweight ASGI framework/toolkit. It is a modern, fast (high-performance), web framework for building APIs with Python 3.6+ based on standard Python type hints. It is inspired by APIStar, but it is not a fork. It is designed to be high-performance, asynchronous, and ready to serve production workloads. It is powered by Starlette and Pydantic. It is a class-based API framework that is built on top of Starlette, which is a lightweight ASGI framework/toolkit.
+
+    - **Docker**
+
+      ***Docker*** is a set of platform as a service (PaaS) products that use OS-level virtualization to deliver software in packages called containers. Containers are isolated from one another and bundle their own software, libraries, and configuration files; they can communicate with each other through well-defined channels. All containers are run by a single operating system kernel and are thus more lightweight than virtual machines. Containers are created from images that specify their precise contents. Images are often created by combining and modifying standard images downloaded from public repositories.
+
 ## Project Workflow
 #### Data Collection
 - Efficiently gather data from various free and reliable websites. Cause we are using a machine learning model, we need to collect a large amount of data to train our model. We used a web scraping technique to collect data from the web and also collecting some data manually. We used ***BeautifulSoup***, ***requests*** library to scrape data from the web. And it was the hardest part of the project. 
