@@ -45,15 +45,15 @@ As dedicated data engineering students, we thrive on expanding our skill sets th
       ***Keras*** is a high-level neural networks API written in Python that serves as an interface for building and training neural networks. Originally a separate library, Keras has been integrated as the official high-level API into TensorFlow since version 2.0. Keras abstracts and simplifies the construction of neural networks, offering a user-friendly interface without sacrificing flexibility. It allows rapid prototyping of deep learning models, emphasizing modularity, ease of use, and extensibility. Keras can run seamlessly on top of various deep learning frameworks, with TensorFlow being the primary backend.
   - **FastApi&Docker - Model Deployment**
 
-        <img src="readmeimgs\fast.png" alt="FastApi&Docker" width="300" height="150">
+    <img src="readmeimgs\fast.png" alt="FastApi&Docker" width="500" height="150" >
 
-    - **FastApi**
+    - **FastAPI**
 
       ***FastAPI*** is a modern, fast (high-performance), web framework for building APIs with Python 3.6+ based on standard Python type hints. It is inspired by APIStar, but it is not a fork. It is designed to be high-performance, asynchronous, and ready to serve production workloads. It is powered by Starlette and Pydantic. It is a class-based API framework that is built on top of Starlette, which is a lightweight ASGI framework/toolkit. It is a modern, fast (high-performance), web framework for building APIs with Python 3.6+ based on standard Python type hints. It is inspired by APIStar, but it is not a fork. It is designed to be high-performance, asynchronous, and ready to serve production workloads. It is powered by Starlette and Pydantic. It is a class-based API framework that is built on top of Starlette, which is a lightweight ASGI framework/toolkit.
 
     - **Docker**
 
-      ***Docker*** is a set of platform as a service (PaaS) products that use OS-level virtualization to deliver software in packages called containers. Containers are isolated from one another and bundle their own software, libraries, and configuration files; they can communicate with each other through well-defined channels. All containers are run by a single operating system kernel and are thus more lightweight than virtual machines. Containers are created from images that specify their precise contents. Images are often created by combining and modifying standard images downloaded from public repositories.
+      ***Docker*** is a set of platform-as-a-service (PaaS) products that use OS-level virtualization to deliver software in packages called containers. Containers are isolated from one another and bundle their own software, libraries, and configuration files; they can communicate with each other through well-defined channels. All containers are run by a single operating system kernel and are thus more lightweight than virtual machines. Containers are created from images that specify their precise contents. Images are often created by combining and modifying standard images downloaded from public repositories.
 
 ## Project Workflow
 #### Data Collection
@@ -64,7 +64,7 @@ As dedicated data engineering students, we thrive on expanding our skill sets th
 #### Front End
 - We used ***HTML*** to create the structure of our web pages, ***CSS*** to style our web pages, ***JavaScript*** to add dynamic behavior to our web pages, ***Bootstrap*** to create our web pages, ***JQuery*** to add dynamic behavior to our web pages, ***AJAX*** to send asynchronous requests to our web services, ***JSON*** to send data between our web pages and our web services.
 #### Machine learning model
-  - We used ***TensorFlow***, ***Keras*** and ***Python*** to build our model. We used ***Jupyter Notebook*** to test and create the model. We used ***NLTK*** because we're developing a chatbot that will interact with the text that we send to it. To save and build the model we used ***Pickle*** library.
+  - We used ***TensorFlow***, ***Keras*** and ***Python*** to build our model, ***Jupyter Notebook*** to test and create the model, ***NLTK*** because we're developing a chatbot that will interact with the text that we send to it. To save and build the model we used ***Pickle*** library. And finally to deploy the model as an API we used ***FastAPI*** and ***Docker***.
 #### Chatbot Logic:
 - *S7yby_Nutrition_chatbot* is a robust multiclass machine learning system.
 - Learns patterns from intents.json to provide users with accurate responses tailored to specific questions.
