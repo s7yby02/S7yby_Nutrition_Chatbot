@@ -55,12 +55,12 @@
     },
     {
       "tag": "Male Basic advice",
-      "patterns": ["I'm male, how can you help me", "can you give general ideas about healthy nutrition for males?", "Men advices for nutrition?", "What should men know about nutrition", "Diety plans for males?", "Can you tell me what a man should know about nutrition, adivces ...."],
+      "patterns": ["i'm male, how can you help me", "can you give general ideas about healthy nutrition for males?", "men advices for nutrition?", "what should men know about nutrition", "diety plans for males?", "can you tell me what a man should know about nutrition, adivces ...."],
       "responses": ["Sure! Here are some general ideas for maintaining a healthy and balanced diet: Maintaining a healthy diet for men involves a balanced approach to nutrition. Prioritize lean proteins, colorful fruits, and vegetables for essential nutrients. Opt for whole grains and healthy fats while staying well-hydrated. Mindful eating, portion control, and regular, balanced meals contribute to overall well-being. Limit processed foods, sugary snacks, and alcohol intake for better health. Tailor your nutrition to individual needs, and consider consulting a healthcare professional for personalized advice. I can give assist you with details if you tell me more about you specially your about your age."]
     },
     {
       "tag": "Best for weight loss",
-      "patterns": ["I want to lose weight", "how can you help me losing weight", "Diet for losing weight", "Weight loss diet?", "Meals for weigth loss", "Meals to lose weight"],
+      "patterns": ["i want to lose weight", "how can you help me losing weight", "diet for losing weight", "weight loss diet?", "meals for weigth loss", "meals to lose weight"],
       "responses": ["WW, formerly known as Weight Watchers, is a popular point-based weight loss program aimed at promoting healthy eating habits. Each food is assigned a specific number of SmartPoints, which is determined based on its nutritional value. Members are also assigned a daily budget of SmartPoints based on factors like their height, weight, and activity level. WW is one of the most flexible commercial weight loss programs available. No foods are completely off-limits, and you can still enjoy many of your favorite foods, as long as they fit within your daily SmartPoints budget. Plus, research shows that it can be effective for long-term weight loss. According to one review of 39 studies, participants who followed WW for 12 months achieved at least 2.6% more weight loss, compared with both a control group and those who received basic nutritional education. You can find more details here: https://www.weightwatchers.com/us/marketing/affiliate"]
     },
     {
@@ -70,12 +70,12 @@
     },
     {
       "tag": "Best for diabetes",
-      "patterns": ["Diabetes plans ?", "Meals for diabetes", "Diet for diabetes"],
+      "patterns": ["diabetes plans ?", "meals for diabetes", "diet for diabetes"],
       "responses": ["Low carb diets focus on limiting the amount of carbs you consume, often by restricting high carb foods like pasta, bread, and sugary snacks. There are several types of low carb diets, but most involve reducing your carb intake to fewer than 130 grams per day, or around 26% of your total daily calories. Studies show that following a carb-controlled diet can help improve blood sugar management in people with type 2 diabetes. Well-planned low carb diets are also typically rich in fiber and lean sources of protein, both of which can help slow digestion and prevent blood sugar spikes after you eat. get started with your diet here: https://www.bistromd.com/"]
     },
     {
       "tag": "Woman",
-      "patterns": ["Woman assistance?", "Advices for women", "women advices?", "advices for women"],
+      "patterns": ["woman assistance?", "advices for women", "women advices?", "advices for women"],
       "responses": ["Mediterranean Diet: This diet is based on the traditional eating patterns of countries bordering the Mediterranean Sea. It emphasizes fruits, vegetables, whole grains, fish, nuts, and olive oil while limiting red meat and processed foods. The Mediterranean diet is associated with various health benefits, including heart health"]
     },
     {
